@@ -1,0 +1,64 @@
+/* styles.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Poppins, sans-serif;
+    background: rgba(255, 255, 255, 0.2); /* Base color for the blur effect */
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px  rgba(0, 0, 0, 0.5);
+    max-width: 90%; /* Make container responsive */
+    width: 400px;   /* Set a max width */
+}
+
+h1 {
+    color: #ff69b4; /* Pink color */
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #333; /* Dark text for better contrast */
+    font-size: 1rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Decrease heading size for smaller screens */
+    }
+
+    p {
+        font-size: 1rem; /* Decrease paragraph size for smaller screens */
+    }
+
+    .container {
+        padding: 15px; /* Adjust padding */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem; /* Further decrease heading size */
+    }
+
+    p {
+        font-size: 0.9rem; /* Further decrease paragraph size */
+    }
+
+    .container {
+        padding: 10px; /* Further adjust padding */
+    }
+}
